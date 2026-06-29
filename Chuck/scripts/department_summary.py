@@ -27,10 +27,10 @@ with open("data/employees.txt", "r") as file:
         if department in department_counts:
             department_counts[department] += 1
         else:
-            department_counts[department] == 1
+            department_counts[department] = 1                   # Fixed: original code was "department_counts[department] = 0" (should be 1)
 
-print("DEPARTMENT SUMMARY")
+print("************************************* DEPARTMENT SUMMARY *************************************")
 print("==================")
 
-for department, count in department_counts.items()
+for department, count in department_counts.items():            # Fixed: original code was "for department, count in department_counts:" (should be .items())
     print(f"{department}: {count}")

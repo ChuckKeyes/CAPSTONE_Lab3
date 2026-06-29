@@ -7,3 +7,4 @@ badline
 tclark,HR,not_a_number
 format_issue,Legal,18,extra
 
+charles,IT,4

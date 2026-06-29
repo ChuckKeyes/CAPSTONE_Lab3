@@ -34,17 +34,17 @@ with open(input_file, "r") as file:
         employee_record = (username, department, days)
         employees.append(employee_record)
 
-print("ACCOUNT AUDIT REPORT")
+print("******************************** ACCOUNT AUDIT REPORT ********************************")
 print("====================")
 
 for employee in employees:
     username = employee[0]
-    department = employee[2]
-    days = employee[1]
+    department = employee[1]                # Fixed: original code was "department = employee[2]" (should be employee[1])
+    days = employee[2]                      # Fixed: original code was "days = employee[1]" (should be employee[2])
 
     if days >= 90:
         status = "DISABLE"
-    elif days >= 30
+    elif days >= 30:    # Fixed: original code was "elif days >= 30" (missing :)
         status = "REVIEW"
     else:
         status = "ACTIVE"

@@ -8,16 +8,16 @@ username = input("Username: ")
 department = input("Department: ")
 days = input("Days since last login: ")
 
-if username == "" and department == "":
-    print("Username and department must not be blank.")
+if username == "" or department == "":      # Fixed: original code was "if username == "" and department == "":" (should be or)
+    print("Username or department must not be blank.")
 
-elif not days.isdigit()
+elif not days.isdigit():                    # Fixed: original code was "elif days.isdigit():" (should be not)
     print("Days since last login must be a whole number.")
 
 else:
     new_employee = (username, department, days)
 
     with open("data/employees.txt", "a") as file:
-        file.write(new_employee)
+        file.write(f"{new_employee[0]},{new_employee[1]},{new_employee[2]}\n")  # Wrong data type
 
-    print(f"Employee {username} added successfully.")
+    print(f"Employee {username} added successfully. *************************************")

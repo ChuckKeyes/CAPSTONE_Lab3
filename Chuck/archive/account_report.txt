@@ -1,0 +1,20 @@
+Skipping invalid inactivity value: jdoe,Sales,5
+
+Skipping invalid inactivity value: asmith,Finance,30
+
+Skipping invalid inactivity value: bwilson,IT,12
+
+Skipping invalid inactivity value: mjones,Marketing,95
+
+Skipping invalid inactivity value: sroberts,Security,90
+
+Skipping malformed record: badline
+
+Skipping invalid inactivity value: tclark,HR,not_a_number
+
+Skipping malformed record: format_issue,Legal,18,extra
+
+Skipping malformed record: 
+
+ACCOUNT AUDIT REPORT
+====================

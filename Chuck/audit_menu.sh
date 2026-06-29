@@ -24,7 +24,7 @@ do
     echo "5 - Exit"
     echo
 
-    if ! read -r -p "Select an option (1-5): " choice
+    if ! read -r -p "Select an option (1-5): " selection;           # if ! read -r -p "Select an option (1-5): " choice  
     then
         echo "Input closed. Exiting."
         exit 1
@@ -32,26 +32,28 @@ do
 
     case "$selection" in
         1)
-            python3 scripts/account_audit.py > reports/account_report.txt
+            python scripts/account_audit.py > reports/account_report.txt
             echo "Account report generated."
             ;;
         2)
-            python3 scripts/account_audit.py > reports/department_report.txt
+            python scripts/department_summary.py > reports/department_report.txt   # department_summary  not account_audit
             echo "Department report generated."
             ;;
         3)
-            python3 scripts/add_employee.py
+            python scripts/add_employee.py
             ;;
         4)
             cp reports/*.txt archive/
             echo "Reports archived."
             ;;
         5)
-            echo "Goodbye."
+            echo "Goodbye, on the Yellow Brick Road."
             exit 0
             ;;
-        *)
+        *)        
             echo "Invalid selection."
+            sleep 2
+            clear
             ;;
     esac
 done
