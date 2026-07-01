@@ -3,6 +3,7 @@
 ## 1. Syntax (Checking files & permissions precedes this step)
 ### 1.1:
 - "pwd"
+- "cd /path/to/CAPSTONE_Lab3/zeek"
 - "find . -maxdepth 2 -type f | sort"
 - "chmod +x audit_menu.sh evaluate_lab.sh"
 ### 1.2:
