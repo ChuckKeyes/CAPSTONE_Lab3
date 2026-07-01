@@ -1,14 +1,22 @@
 # CAPSTONE Lab 3 – Corporate_Auditor_Report (Troubleshooting Guide)
 
-## Student
+## Auditor
 
-**Omari Miller**
+*Omari (Zeek) Miller*
 
 ---
 
 # Overview
+This auditor project was deliberately distributed and contains with syntax errors, logic errors, runtime errors, and data validation problems. 
 
-The Corporate Account Auditor project was intentionally supplied with syntax errors, logic errors, runtime errors, and data validation problems. The objective was to troubleshoot the application while preserving the original business requirements. The project consisted of three Python programs, one Bash orchestration script, and a functional evaluator.
+## Objective: 
+- Troubleshoot and run this application with the original conditions & requirements 
+- DO NOT completely rewrite the project! 
+
+## Components: 
+ - Python programs (3)
+ - Bash orchestration script (1)
+ - Functional evaluator (1)
 
 ---
 
