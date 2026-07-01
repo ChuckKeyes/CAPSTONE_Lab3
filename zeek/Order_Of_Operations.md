@@ -10,8 +10,8 @@
 - "bash -n audit_menu.sh"
 
 - "python3 -m py_compile scripts/account_audit.py"
-- "python3 -m py_compile scripts/account_audit.py"
-- "python3 -m py_compile scripts/account_audit.py"
+- "python3 -m py_compile scripts/department_summary.py"
+- "python3 -m py_compile scripts/add_employee.py"
 
   (**Fix anything that stops the files from running at all!!**)
   
