@@ -81,4 +81,3 @@ Expectation:
 
 - "Results: 15 passed, 0 failed."
 - "Lab evaluation passed."
-- "Big Rule"
