@@ -9,9 +9,9 @@
 ### 1.2:
 - "bash -n audit_menu.sh"
 
-- "python3 -m py_compile scripts/account_audit.py"
-- "python3 -m py_compile scripts/department_summary.py"
-- "python3 -m py_compile scripts/add_employee.py"
+- "python -m py_compile scripts/account_audit.py"
+- "python -m py_compile scripts/department_summary.py"
+- "python -m py_compile scripts/add_employee.py"
 
   (**Fix anything that stops the files from running at all!!**)
   
@@ -38,7 +38,7 @@ Classify:
 - 90+ --> DISABLE
 
 Test out this file:
-- "python3 scripts/account_audit.py"
+- "python scripts/account_audit.py"
   
 ## 4. Department Summary
 
@@ -49,7 +49,7 @@ Points of interest:
 - skipping non-numeric days
 
 Test out this file:
-- "python3 scripts/department_summary.py"
+- "python scripts/department_summary.py"
 
 ## 5. Add Employee
 Points of interest (validation):
