@@ -8,7 +8,7 @@
 - "chmod +x audit_menu.sh evaluate_lab.sh"
 
 <p align="center">
-  <img src="https://github.com/ChuckKeyes/CAPSTONE_Lab3/blob/main/zeek/Audit_Evidence/1.1-Permissions.png" width="300" title="hover text">
+  <img src="https://github.com/ChuckKeyes/CAPSTONE_Lab3/blob/main/zeek/Audit_Evidence/1.1-Permissions.png" width="600" title="hover text">
 </p>
 
 ### 1.2:
