@@ -23,18 +23,35 @@
 - "python -m py_compile scripts/account_audit.py"
 - "python -m py_compile scripts/department_summary.py"
 - "python -m py_compile scripts/add_employee.py"
+<p align="center">
+  <img src="https://github.com/ChuckKeyes/CAPSTONE_Lab3/blob/main/zeek/Audit_Evidence/1.4-py_files_compile-syntax.png" width="600" title="hover text">
+</p>
 
   (**Fix anything that stops the files from running at all!!**)
   
 ## 2. Fix up "Menu"
 Confirm:
-- "1" --> runs account_audit.py > reports/account_report.txt
-- "2" --> runs department_summary.py > reports/department_report.txt
 - "3" --> runs add_employee.py
+- "1" --> runs account_audit.py > reports/account_report.txt
+<p align="center">
+  <img src="https://github.com/ChuckKeyes/CAPSTONE_Lab3/blob/main/zeek/Audit_Evidence/2.2-audit_menu_3%2B1_option.png" width="600" title="hover text">
+</p>
+
+- "2" --> runs department_summary.py > reports/department_report.txt
 - "4" --> copies reports/*.txt to archive/
 - "5" --> exits cleanly
 
+<p align="center">
+  <img src="https://github.com/ChuckKeyes/CAPSTONE_Lab3/blob/main/zeek/Audit_Evidence/2.3-audit_menu_2%2B4%2B5_option.png" width="600" title="hover text">
+</p>
+
   (**Do NOT finalize the Python files yet...First make sure the menu dispatch works!!**)
+  
+  - Example of non-functioning .py scripts:
+  <p align="center">
+  <img src="https://github.com/ChuckKeyes/CAPSTONE_Lab3/blob/main/zeek/Audit_Evidence/2.1-audit_menu_broken.png" width="600" title="hover text">
+</p>
+  
   
 ## 3. Account Audit
 Points of interest:
