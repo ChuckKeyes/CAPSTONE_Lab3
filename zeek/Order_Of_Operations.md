@@ -59,14 +59,23 @@ Points of interest:
 - skipping blank lines
 - skipping malformed lines
 - skipping non-numeric days
+<p align="center">
+  <img src="https://github.com/ChuckKeyes/CAPSTONE_Lab3/blob/main/zeek/Audit_Evidence/3.1-employees_txt_roster.png" width="600" title="hover text">
+</p>
 
 Classify:
 - 0-29 --> ACTIVE
 - 30-89 --> REVIEW
 - 90+ --> DISABLE
+<p align="center">
+  <img src="https://github.com/ChuckKeyes/CAPSTONE_Lab3/blob/main/zeek/Audit_Evidence/3.3-account_audit-account_report-result.png" width="600" title="hover text">
+</p>
 
 Test out this file:
 - "python scripts/account_audit.py"
+<p align="center">
+  <img src="https://github.com/ChuckKeyes/CAPSTONE_Lab3/blob/main/zeek/Audit_Evidence/3.2-account_audit_result.png" width="600" title="hover text">
+</p>
   
 ## 4. Department Summary
 
