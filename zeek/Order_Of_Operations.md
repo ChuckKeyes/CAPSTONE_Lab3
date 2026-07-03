@@ -87,6 +87,9 @@ Points of interest:
 
 Test out this file:
 - "python scripts/department_summary.py"
+<p align="center">
+  <img src="https://github.com/ChuckKeyes/CAPSTONE_Lab3/blob/main/zeek/Audit_Evidence/4.1-department_summary-result.png" width="600" title="hover text">
+</p>
 
 ## 5. Add Employee
 Points of interest (validation):
@@ -96,6 +99,9 @@ Points of interest (validation):
 - valid record = append one line
 
   (**Test invalid input first, THEN valid input!!**)
+<p align="center">
+  <img src="https://github.com/ChuckKeyes/CAPSTONE_Lab3/blob/main/zeek/Audit_Evidence/add_employee_result.png" width="600" title="hover text">
+</p>
   
 ## 6. Test flow & Archive 
 - "./audit_menu.sh" (Run this script!)
@@ -106,16 +112,34 @@ Enter the following selections (in order):
 - "4"
 - "5"
 
+^ Refer to section 2 for flow testing 
+
 Next, check these parameters:
 - "ls -al reports"
 - "ls -al archive"
+<p align="center">
+  <img src="https://github.com/ChuckKeyes/CAPSTONE_Lab3/blob/main/zeek/Audit_Evidence/6.1-list_archive.png" width="600" title="hover text">
+</p>
+
 - "cat reports/account_report.txt"
 - "cat reports/department_report.txt"
+<p align="center">
+  <img src="https://github.com/ChuckKeyes/CAPSTONE_Lab3/blob/main/zeek/Audit_Evidence/cat_reports-account-dept.png" width="600" title="hover text">
+</p>
 
 ## 7. Evaluation (Moment of Truth)
 - "./evaluate_lab.sh" (Run this script!)
 
-Expectation:
+### Expectation:
+<p align="center">
+  <img src="https://github.com/ChuckKeyes/CAPSTONE_Lab3/blob/main/zeek/Audit_Evidence/7.1-evaluation_successful.png" width="600" title="hover text">
+</p>
 
 - "Results: 15 passed, 0 failed."
 - "Lab evaluation passed."
+
+### Troublesome error: 
+- line.strip() was called without assigning the result back to line, preventing proper removal of newline characters and proper classification via the "Status" variable within this project.
+<p align="center">
+  <img src="https://github.com/ChuckKeyes/CAPSTONE_Lab3/blob/main/zeek/Audit_Evidence/7.3-Fail_update.png" width="600" title="hover text">
+</p>
