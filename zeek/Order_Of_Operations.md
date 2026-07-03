@@ -138,8 +138,14 @@ Next, check these parameters:
 - "Results: 15 passed, 0 failed."
 - "Lab evaluation passed."
 
-### Troublesome error: 
+### Troublesome error #1: 
 - line.strip() was called without assigning the result back to line, preventing proper removal of newline characters and proper classification via the "Status" variable within this project.
 <p align="center">
   <img src="https://github.com/ChuckKeyes/CAPSTONE_Lab3/blob/main/zeek/Audit_Evidence/7.3-Fail_update.png" width="600" title="hover text">
+</p>
+
+### Troublesome error #2: 
+- In the evaluate_lab bash script, "python3" used to initiate python scripts, instead of "python" (resulting in a syntax error) on a Windows OS.
+<p align="center">
+  <img src="https://github.com/ChuckKeyes/CAPSTONE_Lab3/blob/main/zeek/Audit_Evidence/7.2-Fail_tyme.png" width="500" title="hover text">
 </p>
