@@ -25,7 +25,7 @@ This auditor project contains syntax errors, logic errors, runtime errors, and d
 
 # Errors That Prevented Execution Before Runtime
 
-My pathway to run the files was not executing properly. I needed a command .pv. 
+My pathway to run the files was not executing properly. I needed a command .pv. This happened in several files for me. My separate directories were not being processed ,which was creating errors. 
 
 
 ## add_employee.py
