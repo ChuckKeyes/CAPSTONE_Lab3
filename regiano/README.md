@@ -13,7 +13,7 @@ The main files I worked on were:
 
 # Problems found
 
-When I first ran the Python files, I got syntax errors. The first problems were mostly missing colons `:`.
+When I first ran the bash, python files,  I got syntax errors. The first problems were mostly missing colons `:`.
 
 Examples:
 
@@ -67,7 +67,7 @@ One issue was this line:
 department_counts[department] == 1
 ```
 
-That was wrong because `==` checks something. It does not set the value.
+That was a typo because `==` checks something. It does not set the value.
 
 I changed it to:
 
@@ -131,11 +131,23 @@ cat archive/department_report.txt
 I included screenshots showing:
 
 * the first syntax errors
+<img width="1185" height="296" alt="Schermafbeelding 2026-07-03 004704" src="https://github.com/user-attachments/assets/78c90f25-8999-4c4e-8bd7-3624d0305328" />
+
 * the code lines where I added the missing colons
-* the evaluator failing with 5 passed and 10 failed
+<img width="1185" height="296" alt="Schermafbeelding 2026-07-03 004704" src="https://github.com/user-attachments/assets/6fd9610b-8ce4-45ed-88c1-87c14d3c07bf" />
+
+* the evaluator failing with 5 passed and 10 failed, because `python3` argument was used instead of `python`
+<img width="1036" height="315" alt="Schermafbeelding 2026-07-04 004559" src="https://github.com/user-attachments/assets/c8ccff9e-e631-47fb-ba28-36065cd81a00" />
+
 * the evaluator improving to 14 passed and 1 failed
+<img width="1040" height="317" alt="Schermafbeelding 2026-07-04 004609" src="https://github.com/user-attachments/assets/ca7ece36-a0e7-48a3-8697-89ce6e27a9ef" />
+
 * the final evaluator passing with 15 passed and 0 failed
+<img width="1084" height="315" alt="Schermafbeelding 2026-07-04 020323" src="https://github.com/user-attachments/assets/c8a31924-ef5c-4e98-a488-ad01a23d8152" />
+
 * the reports and archive files working
+<img width="1020" height="428" alt="image" src="https://github.com/user-attachments/assets/bc37ee1f-1cc5-4616-b559-5027e6e27497" />
+
 
 # Final Result
 
@@ -161,11 +173,12 @@ Optional Instructor Review Prompts
 After solving the lab, explain:
 
 Which errors prevented execution before runtime?
-
-Which errors allowed execution but produced wrong behavior?
 - Syntax errors stopped the scripts from running.
+Which errors allowed execution but produced wrong behavior?
+- Logic errors allowed the script to run, but resulted in the wrong results in the program
 Why is validating external data important in operational automation?
-- 
+- It stops crashes and prevents having bad reports
 Why can tuples be useful for fixed employee records but not be written directly to a file?
 - because tuples are immutable, and in a dynamic input, does cannot be adjusted 
 Why should an orchestration script validate that expected files exist before archiving?
+- So, it does not archive the wrong files
