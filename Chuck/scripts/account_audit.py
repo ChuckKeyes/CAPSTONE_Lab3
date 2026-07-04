@@ -10,15 +10,16 @@ input_file = "data/employees.txt"
 
 with open(input_file, "r") as file:
     for line in file:
-        line.strip()
+        line = line.strip()   # Line is needed as a variable
 
         if line == "":
             continue
 
         parts = line.split(",")
-
+        
         if len(parts) != 3:
             print(f"Skipping malformed record: {line}")
+           
             continue
 
         username = parts[0]
@@ -27,6 +28,7 @@ with open(input_file, "r") as file:
 
         if not days.isdigit():
             print(f"Skipping invalid inactivity value: {line}")
+            
             continue
 
         days = int(days)

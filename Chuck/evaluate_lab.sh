@@ -80,7 +80,7 @@ echo "Running functional evaluation..."
 echo
 
 # 1. Account-audit output
-ACCOUNT_OUTPUT="$(python3 scripts/account_audit.py 2>&1)"
+ACCOUNT_OUTPUT="$(python scripts/account_audit.py 2>&1)"
 ACCOUNT_EXIT_CODE=$?
 
 if [ "$ACCOUNT_EXIT_CODE" -eq 0 ]; then
@@ -94,7 +94,7 @@ check_contains "account audit marks REVIEW users at 30 days" "$ACCOUNT_OUTPUT" "
 check_contains "account audit marks DISABLE users at 90 days" "$ACCOUNT_OUTPUT" "sroberts | Security | 90 days | DISABLE"
 
 # 2. Department summary
-SUMMARY_OUTPUT="$(python3 scripts/department_summary.py 2>&1)"
+SUMMARY_OUTPUT="$(python scripts/department_summary.py 2>&1)"
 SUMMARY_EXIT_CODE=$?
 
 if [ "$SUMMARY_EXIT_CODE" -eq 0 ]; then
@@ -107,7 +107,7 @@ check_contains "department summary counts Sales" "$SUMMARY_OUTPUT" "Sales: 1"
 check_contains "department summary counts Security" "$SUMMARY_OUTPUT" "Security: 1"
 
 # 3. Add employee: valid input
-ADD_OUTPUT="$(printf 'lgarcia\nLegal\n44\n' | python3 scripts/add_employee.py 2>&1)"
+ADD_OUTPUT="$(printf 'lgarcia\nLegal\n44\n' | python scripts/add_employee.py 2>&1)"
 ADD_EXIT_CODE=$?
 
 if [ "$ADD_EXIT_CODE" -eq 0 ]; then
@@ -124,7 +124,7 @@ fi
 
 # 4. Add employee: invalid blank username must be rejected without modifying data
 cp data/employees.txt "$TEMP_DIR/before_invalid_add.txt"
-INVALID_ADD_OUTPUT="$(printf '\nLegal\n44\n' | python3 scripts/add_employee.py 2>&1)"
+INVALID_ADD_OUTPUT="$(printf '\nLegal\n44\n' | python scripts/add_employee.py 2>&1)"
 INVALID_ADD_EXIT_CODE=$?
 
 if [ "$INVALID_ADD_EXIT_CODE" -eq 0 ] && cmp -s "$TEMP_DIR/before_invalid_add.txt" data/employees.txt; then

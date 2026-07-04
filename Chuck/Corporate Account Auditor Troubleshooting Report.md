@@ -35,7 +35,7 @@ Several scripts executed but produced incorrect results due to logic or runtime 
 
 ## account_audit.py
 
-* `line.strip()` was called without assigning the result back to `line`, preventing proper removal of newline characters.
+* `line.strip()` was called without assigning the result back to `line`, preventing proper removal of newline characters. Line = Line.strip()
 * Blank-line detection failed because newline characters remained.
 * Employee tuple indexes were reversed:
 

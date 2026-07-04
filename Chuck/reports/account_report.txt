@@ -1,20 +1,29 @@
-Skipping invalid inactivity value: jdoe,Sales,5
-
-Skipping invalid inactivity value: asmith,Finance,30
-
-Skipping invalid inactivity value: bwilson,IT,12
-
-Skipping invalid inactivity value: mjones,Marketing,95
-
-Skipping invalid inactivity value: sroberts,Security,90
-
+['jdoe', 'Sales', '5'] jdoe,Sales,5
+'jdoe,Sales,5'
+['asmith', 'Finance', '30'] asmith,Finance,30
+'asmith,Finance,30'
+['bwilson', 'IT', '12'] bwilson,IT,12
+'bwilson,IT,12'
+['mjones', 'Marketing', '95'] mjones,Marketing,95
+'mjones,Marketing,95'
+['sroberts', 'Security', '90'] sroberts,Security,90
+'sroberts,Security,90'
+['badline'] badline
+'badline'
 Skipping malformed record: badline
-
+['tclark', 'HR', 'not_a_number'] tclark,HR,not_a_number
+'tclark,HR,not_a_number'
 Skipping invalid inactivity value: tclark,HR,not_a_number
-
+['format_issue', 'Legal', '18', 'extra'] format_issue,Legal,18,extra
+'format_issue,Legal,18,extra'
 Skipping malformed record: format_issue,Legal,18,extra
-
-Skipping malformed record: 
-
-ACCOUNT AUDIT REPORT
+['charles', 'IT', '4'] charles,IT,4
+'charles,IT,4'
+******************************** ACCOUNT AUDIT REPORT ********************************
 ====================
+jdoe | Sales | 5 days | ACTIVE
+asmith | Finance | 30 days | REVIEW
+bwilson | IT | 12 days | ACTIVE
+mjones | Marketing | 95 days | DISABLE
+sroberts | Security | 90 days | DISABLE
+charles | IT | 4 days | ACTIVE
