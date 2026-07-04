@@ -126,3 +126,8 @@ By confirming that report files exist before archiving them, the script becomes 
 
 This troubleshooting exercise demonstrated the importance of distinguishing between syntax errors, logic errors, and runtime errors. It also reinforced proper input validation, CSV processing, Bash menu design, Python data structures, and defensive programming techniques commonly used in Linux automation and cloud engineering.
 
+## Congrats Theo!!
+<p align="center">
+  <img src="https://github.com/ChuckKeyes/CAPSTONE_Lab3/blob/main/zeek/Audit_Evidence/Theo_Propose_lol.jpg" width="600" title="hover text">
+</p>
+
