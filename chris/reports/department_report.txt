@@ -1,0 +1,8 @@
+DEPARTMENT SUMMARY
+==================
+Sales: 1
+Finance: 1
+IT: 3
+Marketing: 1
+Security: 1
+4: 1
