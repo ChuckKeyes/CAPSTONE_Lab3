@@ -30,7 +30,7 @@ My pathway to run the files was not executing properly. I needed a command .pv. 
 
 ## add_employee.py
 
-Had to update entire pathway to connect data folder to employees txt was receiving errors on several python files to run properly.
+Had to update entire pathway to connect data folder to employees txt. There were several errors on several python files regarding this issue.
 
 
 * Missing colon after the `elif not days.isdigit()` statement, producing a Python `SyntaxError`.
@@ -45,7 +45,7 @@ Several scripts executed but produced incorrect results due to logic or runtime 
 
 ## account_audit.py
 
-Had to update entire pathway to connect data folder to employees txt was receiving errors on several python files to run properly.
+Had to update entire pathway to connect data folder to employees txt. There were several errors on several python files regarding this issue.
 
 * `line.strip()` was called without assigning the result back to `line`, preventing proper removal of newline characters.
 * Blank-line detection failed because newline characters remained.
@@ -58,7 +58,7 @@ Had to update entire pathway to connect data folder to employees txt was receivi
 
 ## department_summary.py
 
-Had to update entire pathway to connect data folder to employees txt was receiving errors on several python files to run properly.
+Had to update entire pathway to connect data folder to employees txt. There were several errors on several python files regarding this issue.
 
 * Dictionary initialization used the comparison operator (`==`) instead of the assignment operator (`=`).
 * New departments were never added correctly to the dictionary.
