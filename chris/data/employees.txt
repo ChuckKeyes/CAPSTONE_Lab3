@@ -1,0 +1,13 @@
+jdoe,Sales,5
+asmith,Finance,30
+bwilson,IT,12
+mjones,Marketing,95
+sroberts,Security,90
+badline
+tclark,HR,not_a_number
+format_issue,Legal,18,extra
+
+Calonzo,IT,21
+CAlonzo,IT,15
+3,4,5
+CAlonzo,IT,15
