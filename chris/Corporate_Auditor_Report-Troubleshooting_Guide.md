@@ -123,5 +123,5 @@ By confirming that report files exist before archiving them, the script becomes 
 
 # Lessons Learned
 
-The troubleshooting exercise helped us distinguish and fix syntax errors, logic errors and runtime errors. We had to use what we learned in class and claas readings on how to fix the errors and run different type sof files properly. This included; python and shell script.
+The troubleshooting exercise helped us distinguish and fix syntax errors, logic errors and runtime errors. We had to use what we learned in class and class readings on how to fix the errors and run different type sof files properly. This included; python and shell script.
 
